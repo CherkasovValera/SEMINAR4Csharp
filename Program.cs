@@ -11,20 +11,24 @@
 // Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 
 
-// int SumNums(int n)
-// {
-//     int sum = 0;
-//     for (int i = 0; i <= Math.Abs(n % 10); i++)
-//     {
-//         n = n % 10;
-//         sum += i;
-//     }
-//     return sum;
-// }
-// Console.Clear();
-// Console.WriteLine("Введите число:  ");
-// int num = int.Parse(Console.ReadLine());
-// Console.WriteLine($"Сумма цифр = {SumNums(num)}");
+int SumNums(int n)
+{
+    int sum = 0;
+    int i = 0; 
+  int k = 0;
+    while (i <=Math.Abs(n*10))
+    {
+        k = Math.Abs(n) % 10;
+        n=n/10;
+        sum =sum+k;
+        i++;
+    }
+    return sum;
+}
+Console.Clear();
+Console.WriteLine("Введите число:  ");
+int num = int.Parse(Console.ReadLine());
+Console.WriteLine($"Сумма цифр = {SumNums(num)}");
 
 
 // Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
