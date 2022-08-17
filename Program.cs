@@ -14,13 +14,11 @@
 int SumNums(int n)
 {
     int sum = 0;
-    int i = 0; 
-  int k = 0;
-    while (i <=Math.Abs(n*10))
+    int i = 0;
+    while (i <= Math.Abs(n * 10))
     {
-        k = Math.Abs(n) % 10;
-        n=n/10;
-        sum =sum+k;
+        sum = sum + Math.Abs(n) % 10;
+        n = n / 10;
         i++;
     }
     return sum;
