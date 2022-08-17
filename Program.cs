@@ -30,30 +30,30 @@
 // Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 
 
-void FillArray(int[] massiv)
-{
-    int length = massiv.Length;
-    int index = 0;
-    while (index < length)
-    {
-        massiv[index] = new Random().Next(1, 10);
-        index++;
-    }
-    
-}
-void PrintArray(int[] mass)
-{
-    int count = mass.Length;
-    int position = 0;
-    Console.Write("[");
-    while (position < count)
-    {
-        Console.Write($"{mass[position]} ");
-        position++;
-    }
-    Console.Write("]");
-}
-int[] array = new int[8];
-FillArray(array);
-PrintArray(array);
+// void FillArray(int[] massiv)
+// {
+//     int length = massiv.Length;
+//     int index = 0;
+//     while (index < length)
+//     {
+//         massiv[index] = new Random().Next(1, 10);
+//         index++;
+//     }
+
+// }
+// void PrintArray(int[] mass)
+// {
+//     int count = mass.Length;
+//     int position = 0;
+//     Console.Write("[");
+//     while (position < count)
+//     {
+//         Console.Write($"{mass[position]} ");
+//         position++;
+//     }
+//     Console.Write("]");
+// }
+// int[] array = new int[8];
+// FillArray(array);
+// PrintArray(array);
 
